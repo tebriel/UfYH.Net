@@ -18,15 +18,14 @@ namespace UfYHTests.ViewModelTests
         public void TestGetChallenge()
         {
             _randomViewModel.GetNewChallenge();
-            const string expected = "Clean something!";
             var actual = _randomViewModel.ChallengeText;
-            Assert.AreEqual(expected, actual);
+            Assert.IsTrue(actual.Length > 0);
         }
 
         [TestMethod]
         public void TestTimeChoiceList()
         {
-            const string expected = "5";
+            const int expected = 5;
             var actual = _randomViewModel.SelectedTimeChoice;
             Assert.AreEqual(expected, actual);
         }
