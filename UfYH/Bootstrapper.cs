@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using Caliburn.Micro;
+using Microsoft.Practices.Unity;
+using UfYH.ViewModels;
 
 namespace UfYH
 {
-    using Caliburn.Micro;
 
-    using Microsoft.Practices.Unity;
-
-    using UfYH.ViewModels;
 
     public class Bootstrapper: Bootstrapper<ShellViewModel>
     {
@@ -17,6 +16,7 @@ namespace UfYH
         {
             _container = new UnityContainer();
             _container
+                .RegisterType<IWindowManager, WindowManager>(new ContainerControlledLifetimeManager())
                 .RegisterType<ShellViewModel>(new ContainerControlledLifetimeManager())
                 .RegisterType<IScreen, RandomUnfuckingViewModel>(new ContainerControlledLifetimeManager());
         }

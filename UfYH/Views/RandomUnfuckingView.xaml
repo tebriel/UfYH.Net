@@ -8,6 +8,7 @@
              d:DataContext="{d:DesignInstance loc:RandomUnfuckingViewModel}">
     <Grid>
         <Label x:Name="ChallengeText" Content=""/>
+        <ComboBox x:Name="TimeChoice" Width="150px" Height="40px"/>
         <Button x:Name="GetNewChallenge" Width="100px" Height="40px" Content="Random!" Margin="100,193,100,67" />
     </Grid>
 </UserControl>

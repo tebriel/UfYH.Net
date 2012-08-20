@@ -1,4 +1,5 @@
-﻿using Caliburn.Micro;
+﻿using System.Collections.Generic;
+using Caliburn.Micro;
 
 namespace UfYH.ViewModels
 {
@@ -7,6 +8,11 @@ namespace UfYH.ViewModels
         public RandomUnfuckingViewModel()
         {
             ChallengeText = string.Empty;
+            TimeChoice = new List<string>();
+            TimeChoice.Add("5");
+            TimeChoice.Add("20");
+            TimeChoice.Add("45");
+            SelectedTimeChoice = TimeChoice[0];
         }
 
         public string ChallengeText { get; set; }
@@ -16,5 +22,8 @@ namespace UfYH.ViewModels
             ChallengeText = "Clean something!";
             NotifyOfPropertyChange(() => ChallengeText);
         }
+
+        public IList<string> TimeChoice { get; set; }
+        public string SelectedTimeChoice { get; set; }
     }
 }

@@ -22,5 +22,13 @@ namespace UfYHTests.ViewModelTests
             var actual = _randomViewModel.ChallengeText;
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        public void TestTimeChoiceList()
+        {
+            const string expected = "5";
+            var actual = _randomViewModel.SelectedTimeChoice;
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
