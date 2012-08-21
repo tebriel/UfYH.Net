@@ -22,8 +22,8 @@ namespace UfYH.ViewModels
 
         public void GetNewChallenge()
         {
-            var list = (from task in Model.Tasks where (task.Duration == SelectedTimeChoice) select task).ToList();
-            ChallengeText = list[(new Random()).Next(0, list.Count) ].Text;
+            var randomTask = Model.GetRandomTask(SelectedTimeChoice);
+            ChallengeText = randomTask.Text;
             NotifyOfPropertyChange(() => ChallengeText);
         }
 
