@@ -22,7 +22,7 @@
     <Text>Empty your dishwasher or put the dishes in the drainer away.</Text>
   </Task>
   <Task>
-    <Room>Living Room</Room>
+    <Room>LivingRoom</Room>
     <Duration>5</Duration>
     <Text>Dust TV and electronic equipment. Dust TV stand or entertainment center.</Text>
   </Task>
@@ -40,12 +40,12 @@
     <Text>Pick one cluttered surface: end table, coffee table, kitchen counter, etc., clear everything off of it (and throw away/put away), and wipe down.</Text>
   </Task>
   <Task>
-    <Room>All Rooms</Room>
+    <Room>AllRooms</Room>
     <Duration>5</Duration>
     <Text>Collect all dishes and put in dishwasher or sink. Bonus: Wash them.</Text>
   </Task>
   <Task>
-    <Room>All Rooms</Room>
+    <Room>AllRooms</Room>
     <Duration>5</Duration>
     <Text>Find random pieces of trash and throw them out. Napkins, old receipts, pizza boxes, empty packaging, whatever. If it's not useful, toss it.</Text>
   </Task>

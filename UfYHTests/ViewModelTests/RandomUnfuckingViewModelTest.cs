@@ -13,7 +13,7 @@ namespace UfYHTests.ViewModelTests
         public void SetUp()
         {
             var randomlist = new RandomListModel();
-            randomlist.Tasks.Add(new Task() { Text = "Clean the house", Room = "Bathroom" });
+            randomlist.Tasks.Add(new Task() { Text = "Clean the house", Room = Room.Bathroom });
             randomlist.Tasks.Add(new Task() { Text = "Clean the sink", Duration = 5 });
             _randomViewModel = new RandomUnfuckingViewModel(randomlist);
         }

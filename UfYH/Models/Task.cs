@@ -13,7 +13,7 @@ namespace UfYH.Models
         }
         public string Text { get; set; }
 
-        public string Room { get; set; }
+        public Room Room { get; set; }
 
         public int Duration { get; set; }
     }

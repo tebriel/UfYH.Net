@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using Caliburn.Micro;
 using UfYH.Models;
 
@@ -13,6 +11,8 @@ namespace UfYH.ViewModels
             ChallengeText = string.Empty;
             TimeChoice = new List<int> {5, 10, 20};
             SelectedTimeChoice = TimeChoice[0];
+            RoomChoice = new List<string> {"All Rooms", "Bathroom", "Bedroom", "Kitchen", "Living Room"};
+            SelectedRoomChoice = RoomChoice[0];
             Model = randomListModel;
         }
 
@@ -22,12 +22,17 @@ namespace UfYH.ViewModels
 
         public void GetNewChallenge()
         {
-            var randomTask = Model.GetRandomTask(SelectedTimeChoice);
+            var roomIndex = RoomChoice.IndexOf(SelectedRoomChoice);
+            var randomTask = Model.GetRandomTask(SelectedTimeChoice, (Room)roomIndex);
+
             ChallengeText = randomTask.Text;
             NotifyOfPropertyChange(() => ChallengeText);
         }
 
         public IList<int> TimeChoice { get; set; }
         public int SelectedTimeChoice { get; set; }
+
+        public IList<string> RoomChoice { get; set; }
+        public string SelectedRoomChoice { get; set; }
     }
 }

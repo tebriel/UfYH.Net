@@ -7,8 +7,11 @@
              d:DesignHeight="300" d:DesignWidth="300"
              d:DataContext="{d:DesignInstance loc:RandomUnfuckingViewModel}">
     <Grid>
+        <Label Content="Length of Time" Margin="25,106,175,164" Width="100" />
+        <Label Content="Room" Margin="175,106,25,164" Width="100" />
         <TextBlock x:Name="ChallengeText" Width="200px" Height="50px" Margin="50,10,50,240" TextWrapping="Wrap" TextAlignment="Center"/>
-        <ComboBox x:Name="TimeChoice" Width="150px" Height="40px"/>
+        <ComboBox x:Name="TimeChoice" Width="100px" Height="25px" Margin="0,133,150,127"/>
+        <ComboBox x:Name="RoomChoice" Width="100px" Height="25px" Margin="150,133,0,127"/>
         <Button x:Name="GetNewChallenge" Width="100px" Height="40px" Content="Random!" Margin="100,193,100,67" />
     </Grid>
 </UserControl>
