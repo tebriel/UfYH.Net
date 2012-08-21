@@ -8,27 +8,22 @@ namespace UfYH.ViewModels
 {
     public class RandomUnfuckingViewModel : Screen
     {
-        public RandomUnfuckingViewModel()
+        public RandomUnfuckingViewModel(RandomListModel randomListModel)
         {
             ChallengeText = string.Empty;
             TimeChoice = new List<int> {5, 10, 20};
             SelectedTimeChoice = TimeChoice[0];
-            Lists = new List<RandomListModel>();
-            var rlm = new RandomListModel();
-            rlm.Items.Add("Clean the house");
-            rlm.Items.Add("Clean the sink");
-            rlm.TimeLength = TimeChoice[0];
-            Lists.Add(rlm);
+            Model = randomListModel;
         }
 
-        public IList<RandomListModel> Lists;
+        public RandomListModel Model { get; set; }
 
         public string ChallengeText { get; set; }
 
         public void GetNewChallenge()
         {
-            var list = Lists.First(itemList => (itemList.TimeLength == SelectedTimeChoice));
-            ChallengeText = list.Items[(new Random()).Next(0, Lists[0].Items.Count) ];
+            var list = (from task in Model.Tasks where (task.Duration == SelectedTimeChoice) select task).ToList();
+            ChallengeText = list[(new Random()).Next(0, list.Count) ].Text;
             NotifyOfPropertyChange(() => ChallengeText);
         }
 

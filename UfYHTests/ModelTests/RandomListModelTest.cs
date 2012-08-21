@@ -11,11 +11,9 @@ namespace UfYHTests.ModelTests
         public void TestConstructor()
         {
             var randomlist = new RandomListModel();
-            randomlist.Items.Add("Clean the house");
-            randomlist.Items.Add("Clean the sink");
-            randomlist.TimeLength = 5;
-            Assert.AreEqual(2, randomlist.Items.Count);
-            Assert.AreEqual(5, randomlist.TimeLength);
+            randomlist.Tasks.Add(new Task() { Text = "Clean the house" });
+            randomlist.Tasks.Add(new Task() { Text = "Clean the sink" });
+            Assert.AreEqual(2, randomlist.Tasks.Count);
         }
     }
 }

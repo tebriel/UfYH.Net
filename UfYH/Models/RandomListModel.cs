@@ -9,9 +9,8 @@ namespace UfYH.Models
         //Empty constructor for Serialization
          public RandomListModel()
          {
-             Items = new List<string>();
+             Tasks = new List<Task>();
          }
-        public IList<string> Items;
-        public int TimeLength;
+        public List<Task> Tasks;
     }
 }

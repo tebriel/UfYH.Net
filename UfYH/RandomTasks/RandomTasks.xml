@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RandomListModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<Tasks>
+  <Task>
+    <Room>Bathroom</Room>
+    <Duration>5</Duration>
+    <Text>Spray shower walls and tub floor with all-purpose cleaner. Wipe down all shelves, racks, and bottles in shower. Throw away anything empty, gross or in need of replacing. Rinse Shower.</Text>
+  </Task>
+  <Task>
+    <Room>Kitchen</Room>
+    <Duration>5</Duration>
+    <Text>Clean out your silverware drawer. Take everything out, wipe out the drawer and silverware organizer, then replace items.</Text>
+  </Task>
+  <Task>
+    <Room>Bedroom</Room>
+    <Duration>5</Duration>
+    <Text>Clear off nightstand or top of dresser. Dust. Put items away.</Text>
+  </Task>
+  <Task>
+    <Room>Kitchen</Room>
+    <Duration>5</Duration>
+    <Text>Empty your dishwasher or put the dishes in the drainer away.</Text>
+  </Task>
+  <Task>
+    <Room>Living Room</Room>
+    <Duration>5</Duration>
+    <Text>Dust TV and electronic equipment. Dust TV stand or entertainment center.</Text>
+  </Task>
+  <Task>
+    <Duration>5</Duration>
+    <Text>Pick one shelf or surface and clean it off. Sort, throw out, wipe down, and reorganize.</Text>
+  </Task>
+  <Task>
+    <Room>Kitchen</Room>
+    <Duration>5</Duration>
+    <Text>Wipe down the outside of your fridge, and do a quick throw-away of anything expired or gross inside.</Text>
+  </Task>
+  <Task>
+    <Duration>5</Duration>
+    <Text>Pick one cluttered surface: end table, coffee table, kitchen counter, etc., clear everything off of it (and throw away/put away), and wipe down.</Text>
+  </Task>
+  <Task>
+    <Room>All Rooms</Room>
+    <Duration>5</Duration>
+    <Text>Collect all dishes and put in dishwasher or sink. Bonus: Wash them.</Text>
+  </Task>
+  <Task>
+    <Room>All Rooms</Room>
+    <Duration>5</Duration>
+    <Text>Find random pieces of trash and throw them out. Napkins, old receipts, pizza boxes, empty packaging, whatever. If it's not useful, toss it.</Text>
+  </Task>
+  <Task>
+    <Duration>5</Duration>
+    <Text>Charge your electronics. All of them.</Text>
+  </Task>
+  <Task>
+    <Room>Kitchen</Room>
+    <Duration>5</Duration>
+    <Text>Wipe down your countertops.</Text>
+  </Task>
+  <Task>
+    <Duration>5</Duration>
+    <Room>Bedroom</Room>
+    <Text>Make your bed.</Text>
+  </Task>
+  <Task>
+    <Duration>5</Duration>
+    <Text>Shred junk mail for five minutes.</Text>
+  </Task>
+  <Task>
+    <Duration>5</Duration>
+    <Text>Dust any lampshades, tablecloths, and any other fabric that's out and about.</Text>
+  </Task>
+  <Task>
+    <Duration>5</Duration>
+    <Text>Change your hand towels in the bathroom and dish towels in the kitchen.</Text>
+  </Task>
+  <Task>
+    <Duration>5</Duration>
+    <Text>Sweep/vacuum/mop the entry to your house. Front doors let in a lot of dirt.</Text>
+  </Task>
+  <Task>
+    <Room>Kitchen</Room>
+    <Duration>5</Duration>
+    <Text>Microwave a bowl of water for 2 minutes. In the meantime, wipe down the outside of hte microwave. When the water's done, wipe out the inside.</Text>
+  </Task>
+  <Task>
+    <Duration>5</Duration>
+    <Text>Clean your computer keyboard, mouse, and screen.</Text>
+  </Task>
+  <Task>
+    <Duration>5</Duration>
+    <Room>Bathroom</Room>
+    <Text>Put away anything on the counter that lives elsewhere. Wipe down the countertop, sink, toilet lid, and seat. Sweep/dust mop all hair off the floor. Put a little all-purpose cleaner into toilet bowl.</Text>
+  </Task>
+  <Task>
+    <Duration>5</Duration>
+    <Room>Bedroom</Room>
+    <Text>Organize your jewelry/hats/purses/belts/ties. Whatever you have multiples of in some kind of heap or pile, clean 'em up.</Text>
+  </Task>
+  <Task>
+    <Duration>5</Duration>
+    <Text>Put away everything that's within sight when you first walk in your front door. Kicked-off shoes, abandoned jackets, random shopping bags - put them where they belong.</Text>
+  </Task>
+  <Task>
+    <Duration>5</Duration>
+    <Room>Bathroom</Room>
+    <Text>Wipe down the walls with rags or paper towels with cleaning solution or with cleaning wipes. Pay close attention to the area around the toilet and where things that get sprayed (hairspray, perfume, etc.) might end up.</Text>
+  </Task>
+</Tasks>
+</RandomListModel>
